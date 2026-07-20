@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Tic Tac Toe AI</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>Tic Tac Toe AI</h1>
+
+<div id="board">
+
+</div>
+
+<h2 id="result"></h2>
+
+<button onclick="reset()">Restart</button>
+
+
+<script>
+
+let board=document.getElementById("board");
+
+
+for(let i=0;i<9;i++)
+{
+    let btn=document.createElement("button");
+
+    btn.className="cell";
+    btn.onclick=function(){
+        play(i);
+    };
+
+    board.appendChild(btn);
+}
+
+
+
+function play(pos)
+{
+
+fetch("/move",
+{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+position:pos
+})
+
+})
+
+.then(res=>res.json())
+
+.then(data=>{
+
+
+let cells=document.getElementsByClassName("cell");
+
+
+data.board.forEach((x,i)=>{
+
+cells[i].innerHTML=x;
+
+});
+
+
+document.getElementById("result").innerHTML=data.result;
+
+
+});
+
+}
+
+
+
+function reset()
+{
+fetch("/reset");
+
+location.reload();
+}
+
+
+</script>
+
+
+</body>
+</html>
