@@ -6,25 +6,30 @@ This repository contains the projects completed as part of the **CODSOFT Artific
 
 The projects demonstrate concepts of Artificial Intelligence, Python programming, algorithms, and web application development using Flask.
 
-## Completed Tasks
+---
 
-### Task 1: Rule Based Chatbot
+# Completed Tasks
 
-A simple chatbot developed using Python Flask.
+## Task 1: Rule Based Chatbot
+
+A simple rule-based chatbot developed using Python Flask.
 
 ### Features:
-- User interaction through web interface
+- Interactive chatbot web interface
 - Keyword-based responses
 - Predefined conversation flow
+- User input handling
 - Simple and user-friendly design
 
-Technologies:
+### Technologies Used:
 - Python
 - Flask
 - HTML
 - CSS
 - JavaScript
 
+### Project Link:
+🔗 [Task 1 - Rule Based Chatbot](https://github.com/manushakarre79/CODSOFT_TASKS/tree/main/Task1_Chatbot)
 
 ---
 
@@ -32,7 +37,7 @@ Technologies:
 
 An AI-based Tic Tac Toe game where the user plays against an AI opponent.
 
-The AI uses the **Minimax Algorithm** to find the best possible move.
+The AI uses the **Minimax Algorithm** to calculate the best possible move.
 
 ### Features:
 - Player vs AI gameplay
@@ -41,7 +46,7 @@ The AI uses the **Minimax Algorithm** to find the best possible move.
 - Draw detection
 - Interactive web interface
 
-Technologies:
+### Technologies Used:
 - Python
 - Flask
 - HTML
@@ -49,6 +54,8 @@ Technologies:
 - JavaScript
 - Minimax Algorithm
 
+### Project Link:
+🔗 [Task 2 - Tic Tac Toe AI](https://github.com/manushakarre79/CODSOFT_TASKS/tree/main/Task2_TicTacToe_AI)
 
 ---
 
@@ -63,16 +70,20 @@ The system recommends movies based on selected language and genre.
 - Hindi movie recommendations
 - English movie recommendations
 - Action, Comedy, and Drama categories
-- Dynamic web-based recommendations
+- Language-based recommendations
+- Genre-based recommendations
+- Dynamic web interface
 
-Technologies:
+### Technologies Used:
 - Python
 - Flask
 - HTML
 - CSS
 - JavaScript
 
+### Project Link:
+🔗 [Task 3 - Movie Recommendation System](https://github.com/manushakarre79/CODSOFT_TASKS/tree/main/Task3_Recommendation_System)
 
 ---
 
-## Repository Structure
+# Repository Structure
